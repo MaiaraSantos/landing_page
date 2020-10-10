@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Oswald:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin         : 0;
+    padding        : 0;
+    border         : 0;
+    font-size      : 100%;
+    font-family    : "Montserrat", sans-serif;
+    vertical-align : baseline;
+    text-decoration: none;
+    list-style     : none
+}
+
+section img {
+    width: 200px;
+}
+
+.col-md-8 img {
+    width: 100%;
+}
+
+.container {
+    width         : 1024px;
+    margin        : 30px auto;
+    flex-direction: column;
+}
+
+header section {
+    justify-content: space-between;
+    align-items    : center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav .nav-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #2743bf;
+    font-size: 14px;
+}
+
+.nav .disabled {
+    color: #ffadad;
+}
+
+.nav .nav-link:hover {
+    color: #ffadad;
+}
+
+.nav .nav-item .active {
+    font-size: 14px;
+    background-color: #2743bf;
+    color: white;
+    border-radius: 40px;
+    padding: 5px 20px;
+}
+
+
+
+.nav .nav-item .active:hover {
+    background-color: #ffadad;
+}
+
+.btn {
+    background-color: #E62724;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 30px;
+    border-radius: 40px;
+}
+
+.btn:hover {
+    background: #ffadad;
+    color: white;
+}
+
+.about-site {
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.container h1 {
+    font-size  : 70px;
+    font-weight: 400;
+    color      : #2743bf;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.container h2 {
+    color: #ffadad;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+.container p {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    color: #2743bf;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.card-footer {
+    font-size: 10px;
+    border: none;
+}
+
+/*não consegui fazer menor q 500*/
+@media (max-width: 500px){
+    .container {
+        width: 300px;
+    }
+
+    section img {
+        width: 180px;
+        margin: auto;
+    }
+
+    header .nav {
+        width: 100%;
+        padding: 20px 0px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header .nav ul li {
+        margin: 20px 0;
+    }
+    
+    .container h1 {
+        font-size  : 60px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .container p {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .col-md-4 .btn {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width:750px) {
+    .container {
+        width: 500px;
+    }
+
+    .col-md-4 .btn {
+        margin-bottom: 30px;
+    }
+
+    .container h1 {
+        font-size  : 60px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .container p {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .col-md-4 .btn {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width:900px) {
+    .container {
+        width: 750px;
+    }
+
+    .col-md-4 .btn {
+        margin-bottom: 30px;
+    }
+
+    .container h1 {
+        font-size  : 60px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .container p {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .col-md-4 .btn {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+    .container {
+        width: 900px;
+    }
+
+    .container h1 {
+        font-size  : 60px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .container p {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .col-md-4 .btn {
+        margin-bottom: 25px;
+    }
+}
